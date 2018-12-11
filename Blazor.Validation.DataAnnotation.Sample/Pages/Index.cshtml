@@ -1,0 +1,26 @@
+﻿@page "/"
+@addTagHelper *, Blazor.Validation.DataAnnotation
+@layout Blazor.Validation.DataAnnotation.Sample.Shared.MainLayout
+Sample for executing validation on client side with Dat Annotation <br />
+@afterSubmitText<br />
+    <ValidatedForm OnSubmit="SubmitForm" Model="validatedInstance">
+        <input type="text" bind="@validatedInstance.ValidatedField" /><br />
+        <ValidationErrorLabel Model="validatedInstance" FieldName="ValidatedField" /><br />
+        <button type="submit">Validate</button>
+    </ValidatedForm>
+@functions{
+    private ValidatedModel validatedInstance;
+
+    private string afterSubmitText;
+    protected override void OnInit()
+    {
+        validatedInstance = new ValidatedModel();
+    }
+    private async Task SubmitForm(UIEventArgs eventArgs)
+    {
+        afterSubmitText = "Form is valid !";
+        this.StateHasChanged();
+        await Task.CompletedTask;
+    }
+}
+
