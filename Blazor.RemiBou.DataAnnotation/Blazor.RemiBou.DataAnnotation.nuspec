@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Blazor.RemiBou.DataAnnotation</id>
+    <id>RemiBou.Blazor.DataAnnotation</id>
     <version>0.0.1</version>
     <title>Blazor.RemiBou.DataAnnotation</title>
     <authors>Rémi BOURGAREL</authors>
