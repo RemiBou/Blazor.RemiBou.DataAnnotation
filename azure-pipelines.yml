@@ -22,15 +22,18 @@ steps:
   inputs:
     command: pack
     packagesToPack: RemiBou.Blazor.DataAnnotation/RemiBou.Blazor.DataAnnotation.csproj
-    versioningScheme: byBuildNumber
+    versioningScheme: ByPrereleaseNumber
+    majorVersion: '0' 
+    minorVersion: '0' 
+    patchVersion: '0' 
 - task: DotNetCoreCLI@2
   displayName: 'dotnet push'
   inputs:
     command: push
-
     nuGetFeedType: external
-
     publishFeedCredentials: Nuget
-
-    versioningScheme: byBuildNumber
+    versioningScheme: ByPrereleaseNumber
+    majorVersion: '0' 
+    minorVersion: '0' 
+    patchVersion: '0' 
 
