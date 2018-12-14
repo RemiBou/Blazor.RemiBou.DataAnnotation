@@ -26,14 +26,15 @@ steps:
     majorVersion: '0' 
     minorVersion: '0' 
     patchVersion: '0' 
-- task: DotNetCoreCLI@2
-  displayName: 'dotnet push'
+- task: NuGetCommand@2
   inputs:
     command: push
     nuGetFeedType: external
-    publishFeedCredentials: Nuget
-    versioningScheme: ByPrereleaseNumber
-    majorVersion: '0' 
-    minorVersion: '0' 
-    patchVersion: '0' 
+    publishFeedCredentials: 'Nuget'
+    versioningScheme: byPrereleaseNumber
+    majorVersion: '0'
+    minorVersion: '0'
+    patchVersion: '0'
+    verbosityPush: 'Detailed'
+    configuration: '$(buildConfiguration)'
 
