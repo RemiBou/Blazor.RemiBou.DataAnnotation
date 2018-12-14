@@ -31,10 +31,4 @@ steps:
     command: push
     nuGetFeedType: external
     publishFeedCredentials: 'Nuget'
-    versioningScheme: byPrereleaseNumber
-    majorVersion: '0'
-    minorVersion: '0'
-    patchVersion: '0'
-    verbosityPush: 'Detailed'
-    configuration: '$(buildConfiguration)'
 
