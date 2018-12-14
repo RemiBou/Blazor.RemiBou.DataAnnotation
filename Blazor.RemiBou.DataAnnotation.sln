@@ -9,6 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazor.RemiBou.DataAnnotati
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazor.RemiBou.DataAnnotation.Test", "Blazor.RemiBou.DataAnnotation.Test\Blazor.RemiBou.DataAnnotation.Test.csproj", "{DAC39DDE-EDC1-45EF-8778-145ECD9A2D12}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{08B49B24-9579-460B-B8ED-38334D9DAB1F}"
+	ProjectSection(SolutionItems) = preProject
+		azure-pipelines.yml = azure-pipelines.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
