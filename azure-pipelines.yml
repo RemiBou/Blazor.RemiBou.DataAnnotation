@@ -14,8 +14,14 @@ steps:
   displayName: 'Install SDK'
   inputs:
     version: 2.2.100	
-- script: dotnet pack $(projectName)/$(projectName).nuspec --configuration $(buildConfiguration) -p:PackageVersion=$(packageVersion)
-  displayName: 'dotnet pack'
+- task: NuGetCommand@2
+  inputs:
+    command: pack
+    packagesToPack: '**/*.nuspec'
+    versioningScheme: byPrereleaseNumber
+    majorVersion: '0'
+    minorVersion: '0'
+    patchVersion: '$(rev:.r)'
 - task: NuGetCommand@2
   inputs:
     command: push
