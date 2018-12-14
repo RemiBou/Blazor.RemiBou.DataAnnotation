@@ -15,17 +15,17 @@ steps:
 - task: NuGetToolInstaller@0
   inputs:
     versionSpec: '4.9.2' 
-- script: dotnet build --configuration $(buildConfiguration)
-  displayName: 'dotnet build'
 - task: DotNetCoreCLI@2
   displayName: 'dotnet pack'
   inputs:
     command: pack
     packagesToPack: RemiBou.Blazor.DataAnnotation/RemiBou.Blazor.DataAnnotation.csproj
     versioningScheme: ByPrereleaseNumber
+    configuration: $(buildConfiguration)
     majorVersion: '0' 
     minorVersion: '0' 
-    patchVersion: '0' 
+    patchVersion: '0'
+    verbosityPack: Detailed
 - task: NuGetCommand@2
   inputs:
     command: push
