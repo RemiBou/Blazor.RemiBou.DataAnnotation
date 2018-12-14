@@ -17,23 +17,20 @@ steps:
     versionSpec: '4.9.2' 
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build'
-- task: NuGetCommand@2
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet pack'
   inputs:
     command: pack
-    packagesToPack: 'RemiBou.Blazor.DataAnnotation/*.csproj'
-    versioningScheme: byPrereleaseNumber
-    majorVersion: '0'
-    minorVersion: '0'
-    patchVersion: '0'
-    configuration: '$(buildConfiguration)'
-- task: NuGetCommand@2
+    packagesToPack: RemiBou.Blazor.DataAnnotation/RemiBou.Blazor.DataAnnotation.csproj
+    versioningScheme: byBuildNumber
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet push'
   inputs:
     command: push
+
     nuGetFeedType: external
-    publishFeedCredentials: 'Nuget'
-    versioningScheme: byPrereleaseNumber
-    majorVersion: '0'
-    minorVersion: '0'
-    patchVersion: '0'
-    verbosityPush: 'Detailed'
-    configuration: '$(buildConfiguration)'
+
+    publishFeedCredentials: Nuget
+
+    versioningScheme: byBuildNumber
+
