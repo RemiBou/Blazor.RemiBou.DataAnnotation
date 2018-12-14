@@ -12,6 +12,9 @@ steps:
   displayName: 'Install SDK'
   inputs:
     version: 2.2.100	
+- task: NuGetToolInstaller@0
+  inputs:
+    versionSpec: '4.9.2' 
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build'
 - task: NuGetCommand@2
