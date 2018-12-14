@@ -20,7 +20,7 @@ steps:
   inputs:
     command: pack
     packagesToPack: RemiBou.Blazor.DataAnnotation/RemiBou.Blazor.DataAnnotation.csproj
-    versioningScheme: ByPrereleaseNumber
+    versioningScheme: byPrereleaseNumber
     configuration: $(buildConfiguration)
     majorVersion: '0' 
     minorVersion: '0' 
