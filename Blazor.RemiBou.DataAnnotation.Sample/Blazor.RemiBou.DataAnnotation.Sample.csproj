@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Blazor.Validation.DataAnnotation\Blazor.Validation.DataAnnotation.csproj" />
+    <ProjectReference Include="..\Blazor.RemiBou.DataAnnotation\Blazor.RemiBou.DataAnnotation.csproj" />
   </ItemGroup>
 
 </Project>

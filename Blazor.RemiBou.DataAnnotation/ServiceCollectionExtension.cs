@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Blazor.Validation.DataAnnotation
+namespace Blazor.RemiBou.DataAnnotation
 {
     public static class ServiceCollectionExtension
     {

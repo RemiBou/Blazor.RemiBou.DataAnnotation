@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace Blazor.Validation.DataAnnotation
+namespace Blazor.RemiBou.DataAnnotation
 {
     /// <summary>
     /// Validate a given instance

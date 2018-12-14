@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazor.Validation.DataAnnotation", "Blazor.Validation.DataAnnotation\Blazor.Validation.DataAnnotation.csproj", "{270032BC-7C08-476C-B973-63A299D9A940}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazor.RemiBou.DataAnnotation", "Blazor.RemiBou.DataAnnotation\Blazor.RemiBou.DataAnnotation.csproj", "{270032BC-7C08-476C-B973-63A299D9A940}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazor.Validation.DataAnnotation.Sample", "Blazor.Validation.DataAnnotation.Sample\Blazor.Validation.DataAnnotation.Sample.csproj", "{126EA57D-B893-4BBA-B92E-D5C9BDB98FB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazor.RemiBou.DataAnnotation.Sample", "Blazor.RemiBou.DataAnnotation.Sample\Blazor.RemiBou.DataAnnotation.Sample.csproj", "{126EA57D-B893-4BBA-B92E-D5C9BDB98FB7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazor.Validation.DataAnnotation.Test", "Blazor.Validation.DataAnnotation.Test\Blazor.Validation.DataAnnotation.Test.csproj", "{DAC39DDE-EDC1-45EF-8778-145ECD9A2D12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazor.RemiBou.DataAnnotation.Test", "Blazor.RemiBou.DataAnnotation.Test\Blazor.RemiBou.DataAnnotation.Test.csproj", "{DAC39DDE-EDC1-45EF-8778-145ECD9A2D12}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
