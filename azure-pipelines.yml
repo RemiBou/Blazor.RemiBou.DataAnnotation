@@ -1,8 +1,3 @@
-# ASP.NET Core
-# Build and test ASP.NET Core projects targeting .NET Core.
-# Add steps that run tests, create a NuGet package, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
-
 trigger:
 - master
 
@@ -11,11 +6,20 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
+  projectName: 'Blazor.RemiBou.DataAnnotation'
+  packageVersion: '0.0.$(Build.BuildId)'
 
 steps:
 - task: DotNetCoreInstaller@0
   displayName: 'Install SDK'
   inputs:
     version: 2.2.100	
-- script: dotnet build --configuration $(buildConfiguration)
-  displayName: 'dotnet build $(buildConfiguration)'
+- script: dotnet pack $(projectName)/$(projectName).nuspec --configuration $(buildConfiguration) -p:PackageVersion=$(packageVersion)
+  displayName: 'dotnet pack'
+- task: NuGetCommand@2
+  inputs:
+    command: push
+    nuGetFeedType: external
+    publishFeedCredentials: 'Nuget'
+    versioningScheme: byEnvVar
+    versionEnvVar: Version
