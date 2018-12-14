@@ -21,7 +21,7 @@ steps:
     versioningScheme: byPrereleaseNumber
     majorVersion: '0'
     minorVersion: '0'
-    patchVersion: '$(rev:.r)'
+    patchVersion: '0'
 - task: NuGetCommand@2
   inputs:
     command: push
