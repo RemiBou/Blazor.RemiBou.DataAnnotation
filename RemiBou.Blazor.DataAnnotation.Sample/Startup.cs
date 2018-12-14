@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Blazor.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Blazor.RemiBou.DataAnnotation.Sample
+namespace RemiBou.Blazor.DataAnnotation.Sample
 {
     public class Startup
     {

@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Blazor.RemiBou.DataAnnotation\Blazor.RemiBou.DataAnnotation.csproj" />
+    <ProjectReference Include="..\RemiBou.Blazor.DataAnnotation\RemiBou.Blazor.DataAnnotation.csproj" />
   </ItemGroup>
 
 </Project>

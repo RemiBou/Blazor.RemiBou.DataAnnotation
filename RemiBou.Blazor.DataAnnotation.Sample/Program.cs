@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Blazor.Hosting;
 
-namespace Blazor.RemiBou.DataAnnotation.Sample
+namespace RemiBou.Blazor.DataAnnotation.Sample
 {
     public class Program
     {

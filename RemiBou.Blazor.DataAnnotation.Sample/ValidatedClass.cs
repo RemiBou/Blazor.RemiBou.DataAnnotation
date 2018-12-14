@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Blazor.RemiBou.DataAnnotation.Sample
+namespace RemiBou.Blazor.DataAnnotation.Sample
 {
     public class ValidatedModel
     {
