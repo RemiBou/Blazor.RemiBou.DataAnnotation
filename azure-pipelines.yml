@@ -6,8 +6,6 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
-  projectName: 'Blazor.RemiBou.DataAnnotation'
-  packageVersion: '0.0.$(Build.BuildId)'
 
 steps:
 - task: DotNetCoreInstaller@0
@@ -17,7 +15,7 @@ steps:
 - task: NuGetCommand@2
   inputs:
     command: pack
-    packagesToPack: '**/*.nuspec'
+    packagesToPack: 'RemiBou.Blazor.DataAnnotation/*.csproj'
     versioningScheme: byPrereleaseNumber
     majorVersion: '0'
     minorVersion: '0'

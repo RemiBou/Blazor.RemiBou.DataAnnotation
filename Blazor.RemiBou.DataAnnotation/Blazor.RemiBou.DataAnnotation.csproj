@@ -6,6 +6,8 @@
     <IsPackable>true</IsPackable>
     <BlazorLinkOnBuild>false</BlazorLinkOnBuild>
     <LangVersion>7.3</LangVersion>
+    <Authors>Rémi BOURGAREL</Authors>
+    <Description>Blazor component for validating your form with DataAnnotations attributes. Made from this blog post https://remibou.github.io/Client-side-validation-with-Blazor-and-Data-Annotations/</Description>
   </PropertyGroup>
 
   <ItemGroup>
